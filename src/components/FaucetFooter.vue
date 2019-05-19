@@ -1,18 +1,28 @@
 <template>
-  <div>
-    <h3>transactions</h3>
-    <p v-for="(transaction, index) in transactions" v-bind:key="index">
-      {{ transaction }}
-    </p>
+  <div id="faucet-footer">
+    <b-message type="is-success"
+      v-if="this.transactionHash !== ''"
+    >
+     <!-- <a :href="`www.naver.com/${this.transactionHash}`" target="_blank">{{ transactionHash }}</a> -->
+     <a v-bind:href="`http://faucet.faraday.com/${this.transactionHash}`" target="_blank">{{ transactionHash }}</a>
+    </b-message>
+    <b-message type="is-danger"
+      v-else-if="this.errorMessage"
+    >
+      {{ errorMessage }}
+    </b-message>
   </div>
 </template>
 
 <script>
 export default {
-  props: ['transactions']
+  props: ['transactionHash', 'errorMessage']
 }
 </script>
 
 <style>
-
+#faucet-footer {
+  margin-left: 10%;
+  margin-right: 10%;
+}
 </style>
