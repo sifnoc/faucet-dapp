@@ -3,7 +3,6 @@
     <b-message type="is-success"
       v-if="this.transactionHash !== ''"
     >
-     <!-- <a :href="`www.naver.com/${this.transactionHash}`" target="_blank">{{ transactionHash }}</a> -->
      <a v-bind:href="`http://faucet.faraday.com/${this.transactionHash}`" target="_blank">{{ transactionHash }}</a>
     </b-message>
     <b-message type="is-danger"
