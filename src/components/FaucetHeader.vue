@@ -14,7 +14,7 @@ export default {
 #faucet-header {
   margin-top: 6em;
   margin-bottom: 6em;
-  text-align: center;
+  margin-left: 6em;
 }
 
 #main {
