@@ -10,9 +10,6 @@ export default {
     return {
       account: null
     }
-  },
-  methods: {
-
   }
 }
 </script>
