@@ -22,7 +22,7 @@ export default {
 
 <style>
 #faucet-footer {
-  margin-left: 10%;
-  margin-right: 10%;
+  margin-left: 6em;
+  margin-right: 6em;
 }
 </style>

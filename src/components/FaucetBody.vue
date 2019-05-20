@@ -19,8 +19,8 @@ export default {
 
 <style>
 #faucet-body {
-  margin-left: 10%;
-  margin-right: 10%;
-  margin-bottom: 6%;
+  margin-left: 6em;
+  margin-right: 6em;
+  margin-bottom: 5em;
 }
 </style>
